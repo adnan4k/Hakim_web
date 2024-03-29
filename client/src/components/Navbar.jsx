@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="">
       <nav className="width-[90%]  border-gray-200 dark:bg-gray-900">
-        <div className="max-w-[90%] bg-[#01A3FF40] rounded- flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[90%] my-4 bg-[#01A3FF40] rounded-3xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -14,9 +14,9 @@ function Navbar() {
               className="h-8"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Flowbite
-            </span>
+            </span> */}
           </a>
           <button
             data-collapse-toggle="navbar-default"
