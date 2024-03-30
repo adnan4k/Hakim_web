@@ -3,6 +3,7 @@ import bodyParser from "body-parser"
 import dotenv from "dotenv"
 import cors from "cors"
 import multer from "multer"
+import sequilize from "./db.js"
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {

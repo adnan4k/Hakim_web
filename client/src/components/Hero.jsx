@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="flex flex-col">
       <div className="">
-        <h2 className="mt-5 text-[#00A3FF] text-center font-bold text-6xl">
+        <h2 className="mt-5 max-w-[90%] text-[#00A3FF] text-center font-bold text-6xl">
           Welcome to MedConnect: Your Gateway to Expertise, Insights, and Care!
         </h2>
       </div>
