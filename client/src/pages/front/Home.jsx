@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import LatestPost from '../../components/LatestPost'
 import PopularPost from '../../components/PopularPost'
+import Advertisment from '../../components/Advertisment'
 
 function Home() {
   return (
@@ -18,7 +19,10 @@ function Home() {
         <LatestPost />
         </div>
         <div>
-        <PopularPost />
+        {/* <PopularPost /> */}
+        </div>
+        <div>
+          <Advertisment />
         </div>
     </div>
   )
