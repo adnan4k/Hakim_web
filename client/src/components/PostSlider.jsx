@@ -100,10 +100,10 @@ function Testimony() {
   
   return (
     <div className="testimonial  mb-[3%] ">
-      <div className="w-[90%] ml-[5%] items-center justify-center py-10 mx-2 sm:mx-14">
+      <div className="w-[90%] ml-[5%] items-center justify-center py-10 mx-2 sm:mx-14 ">
         <Slider {...settings}>{data.map((item) => (
           <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3  ">
-            <div className=" bg-white flex flex-col justify-center items-center p-5 rounded-lg shadow-lg">
+            <div className=" bg-white flex flex-col justify-center items-center p-5 border border-[#AAAAAAAA] rounded-lg shadow-lg">
             <div className="flex flex-col">
             <img src={item.image} alt={item.title} className="mx-auto w-full rounded-2xl " />
             <h2 className="text-center text-xl font-semibold ">{item.title}</h2>

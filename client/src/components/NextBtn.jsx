@@ -4,7 +4,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <props.icon style={{ color: "#994d47", fontSize: "30px" }} />
+      <props.icon style={{ color: "white",backgroundColor:"#41BAFF",borderRadius:"50%", fontSize: "30px" }} />
     </div>
   );
 };
