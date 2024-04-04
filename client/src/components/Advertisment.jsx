@@ -1,4 +1,5 @@
 import React from "react";
+import AdsSlider from "./AdsSlider";
 
 function Advertisment() {
   return (
@@ -7,7 +8,7 @@ function Advertisment() {
         <h2 className="text-3xl text-white my-10 font-bold">Discover Latest advertisment</h2>
       </div>
       <div className="slider container">
-        
+        <AdsSlider />
       </div>
     </div>
   );
