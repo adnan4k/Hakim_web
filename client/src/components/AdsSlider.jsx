@@ -56,7 +56,7 @@ function AdsSlider() {
   const settings = {
     dots: true,
     fade: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     speed: 800,
     autoplaySpeed: 6000,
@@ -99,22 +99,25 @@ function AdsSlider() {
   };
   
   return (
-    <div className="testimonial flex flex-row items-center justify-center  mb-[3%] ">
-      <div className="w-full  py-10  ">
-        <Slider {...settings}>{data.map((item) => (
-          <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto">
-            <div className=" bg-white flex flex-col justify-center items-center  border border-[#AAAAAAAA] rounded-2xl shadow-lg">
-            <div className="flex  flex-col w-full">
-            <img src={item.image} alt={item.title} className=" w-full rounded-2xl " />
-            <h2 className="p-3 text-xl font-semibold ">{item.title}</h2>
+    <div className="slider max-w-full py-10 mx-auto flex-row items-center justify-center">
+    <Slider {...settings}>
+      {data.map((item) => (
+        <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto">
+          <div className="bg-white flex flex-col justify-center items-center border border-[#AAAAAAAA] rounded-2xl shadow-lg">
+            <div className="f w-full">
+              <img src={item.image} alt={item.title} className="w-full rounded-2xl" />
+              <h2 className="p-3 text-xl font-semibold">{item.title}</h2>
             </div>
-            <p className=" p-2 my-5">{item.description}</p>
-             <button className="px-20 py-1 bg-[#41BAFF] text-white text-[16px]  text-nowrap rounded-3xl">Read More</button>
-            </div>
+            <p className="p-2 my-5">{item.description}</p>
+            <button className="px-20 py-1 bg-[#41BAFF] text-white text-[16px] text-nowrap rounded-3xl">
+              Read More
+            </button>
           </div>
-      ))}</Slider>
-      </div>
-    </div>
+        </div>
+      ))}
+    </Slider>
+  </div>
+    
   );
 }
 export default AdsSlider;

@@ -4,6 +4,7 @@ import Hero from '../../components/Hero'
 import LatestPost from '../../components/LatestPost'
 import PopularPost from '../../components/PopularPost'
 import Advertisment from '../../components/Advertisment'
+import Podcas from '../../components/Podcas'
 
 function Home() {
   return (
@@ -23,6 +24,9 @@ function Home() {
         </div>
         <div>
           <Advertisment />
+        </div>
+        <div>
+          <Podcas/>
         </div>
     </div>
   )
