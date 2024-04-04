@@ -1,5 +1,5 @@
 import React from "react";
-import MultipleItems from "./PostSlider";
+import MultipleItems from "./PopularPostSlider";
 function PopularPost() {
   return (
     <div>
