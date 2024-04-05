@@ -103,13 +103,13 @@ function AdsSlider() {
     <Slider {...settings}>
       {data.map((item) => (
         <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto">
-          <div className="bg-white flex flex-col justify-center items-center border border-[#AAAAAAAA] rounded-2xl shadow-lg">
+          <div className="bg-white  flex flex-col justify-center items-center  rounded-2xl shadow-lg">
             <div className="f w-full">
               <img src={item.image} alt={item.title} className="w-full rounded-2xl" />
-              <h2 className="p-3 text-xl font-semibold">{item.title}</h2>
+              <h2 className="px-10 pt-3 text-xl font-semibold">{item.title}</h2>
             </div>
-            <p className="p-2 my-5">{item.description}</p>
-            <button className="px-20 py-1 bg-[#41BAFF] text-white text-[16px] text-nowrap rounded-3xl">
+            <p className="px-10 my-5">{item.description}</p>
+            <button className="px-20 py-1 mb-5 bg-[#41BAFF] text-white text-[16px] text-nowrap rounded-3xl">
               Read More
             </button>
           </div>
