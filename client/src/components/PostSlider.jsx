@@ -99,8 +99,8 @@ function Testimony() {
   };
   
   return (
-    <div className="testimonial  mb-[3%] ">
-      <div className="w-[90%] ml-[5%] items-center justify-center py-10 mx-2 sm:mx-14 ">
+<div className="testimonial bg-[url('/images/ef2.png')] bg-no-repeat bg-left-top">
+      <div className="w-[90%] ml-[5%] items-center justify-center py-10 mx-2 sm:mx-14  bg-[url('/images/post-center.png')] bg-no-repeat bg-center">
         <Slider {...settings}>{data.map((item) => (
           <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3  ">
             <div className=" bg-white flex flex-col justify-center items-center p-5 border border-[#AAAAAAAA] rounded-lg shadow-lg">
