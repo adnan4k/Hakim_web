@@ -3,7 +3,7 @@ import MultipleItems from "./PostSlider";
 function LatestPost() {
   return (
     <div>
-      <div className="flex my-5">
+      <div className="flex my-5 mt-">
         <div>
           <h3 className="font-extrabold text-4xl ml-10">Latest Post</h3>
         </div>
