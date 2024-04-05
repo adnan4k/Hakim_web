@@ -10,7 +10,7 @@ function Podcas() {
             <p className='text-[#5A5A5A] my-3 text-xl font-semibold'>Available here</p>
             <button className='my-3 bg-[#01A3FFE8] py-2 text-xl rounded-3xl px-10 text-white'>Subscirbe</button>
         </div>
-        <div className="bg-[#C7EBFF] w-full h-screen  z-10 rounded-full  bg-end items-end justify-end">
+        <div className="bg-[#C7EBFF] w-full h-screen  z-0 rounded-full  bg-end items-end justify-end">
              <img src="/images/podcaster.png" alt="" className=' object-cover justify-end' />
         </div>
       </div>

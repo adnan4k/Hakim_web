@@ -3,7 +3,7 @@ import AdsSlider from "./AdsSlider";
 
 function Advertisment() {
   return (
-    <div>
+    <div  className="z-20">
       <div class="bg-[#16ABFF] bg-cover bg-center h-s flex items-center justify-center">
         <h2 className="text-3xl text-white my-10 font-bold">Discover Latest advertisment</h2>
       </div>
