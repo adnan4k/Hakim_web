@@ -30,25 +30,25 @@ function AdsSlider() {
   const data = [
     {
       title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+      description:"Sidebar has been collecting the best design links of the day since October 2012. It's maintained by the end of the week and here we arre as a nurses.............................",
       image:"/images/ads.png"
 
     },
     {
       title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+      description:"Sidebar has been collecting the best design links of the day since October 2012. It's maintained by the end of the week and here we arre as a nurses.............................",
       image:"/images/ads.png"
 
     },
     {
       title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+      description:"Sidebar has been collecting the best design links of the day since October 2012. It's maintained by the end of the week and here we arre as a nurses.............................",
       image:"/images/ads.png"
 
     },
     {
       title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+      description:"Sidebar has been collecting the best design links of the day since October 2012. It's maintained by the end of the week and here we arre as a nurses.............................",
       image:"/images/ads.png"
 
     },
@@ -99,16 +99,16 @@ function AdsSlider() {
   };
   
   return (
-    <div className="slider max-w-[95%] z-20  py-10 mx-auto flex-row items-center justify-center">
+    <div className="slider max-w-[95%] z-20 -mt-32 py-10 mx-auto flex-row items-center justify-center">
     <Slider {...settings}>
       {data.map((item) => (
-        <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto">
-          <div className="bg-white  flex flex-col justify-center items-center  rounded-2xl shadow-lg">
+        <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto ">
+          <div className="bg-white  flex flex-col justify-center items-center  rounded-3xl shadow-lg">
             <div className="f w-full">
               <img src={item.image} alt={item.title} className="w-full rounded-2xl" />
               <h2 className="px-10 pt-3 text-xl font-semibold">{item.title}</h2>
             </div>
-            <p className="px-10 my-5">{item.description}</p>
+            <p className="px-5 my-5">{item.description}</p>
             <button className="px-20 py-1 mb-5 bg-[#41BAFF] text-white text-[16px] text-nowrap rounded-3xl">
               Read More
             </button>
