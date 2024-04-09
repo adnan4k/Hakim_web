@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="">
       <nav className="width-[90%]  border-gray-200 dark:bg-gray-900">
-        <div className="max-w-[90%] my-4 bg-[#01A3FF40] rounded-3xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[90%] my-4 border border-[#00A3FF] bg-white rounded-3xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -38,47 +38,47 @@ function Navbar() {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium bg-[#01A3FF40] !important flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <div className="hidden w-full md:block text-[18px] md:w-auto" id="navbar-default">
+            <ul className="font-medium  flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  className="block text-[18px] py-2 px-3 mt-2 mx-6 text-white font-bold  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
-                  Home
+                  Podcast
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[18px] py-2 px-3 mt-2 mx-6 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  About
+                  Post
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[18px] py-2 px-3 mt-2 mx-6 font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Services
+                  Advertisment
                 </a>
               </li>
-              <li>
+              <li className=" px-8 rounded-full py-2 border border-[#00A3FF] mb-1">
                 <a
                   href="/"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[18px] py-2 text-[#00A3FF]] rounded-full font-bold  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Pricing
+                  Login
                 </a>
               </li>
-              <li>
+              <li className="px-6 rounded-full py-2 bg-[#00A3FF]">
                 <a
                   href="/"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[18px] py-2 px-3 mr-3 text-white font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Contact
+                  Subscribe
                 </a>
               </li>
             </ul>
