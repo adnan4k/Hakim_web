@@ -8,8 +8,16 @@ function Hero() {
           Welcome to MedConnect: Your Gateway to Expertise, Insights, and Care!
         </h2>
       </div>
-      <div className="bg-[url('/images/hero-bg.jpg')] -mt-24 z-0 bg-cover h-screen bg-center">
-        <img src="/images/hakim-hero.png" className="object-cover" alt="hero" />
+      <div>
+        <div className="bg-[url('/images/ads.png')]  bg-left bg-cover">
+          <div className="bg-[url('/images/hero-bg.jpg')] -mt-24 z-0 bg-cover h-screen bg-center">
+            <img
+              src="/images/hakim-hero.png"
+              className="object-cover"
+              alt="hero"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

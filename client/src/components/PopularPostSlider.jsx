@@ -99,31 +99,31 @@ function PopularPostSlider() {
 
   return (
     <div className="bg-[url('/images/post-center.png')] bg-left-top bg-no-repeat flex justify-center items-center mx-auto max-w-[97%] mb-20">
-    <div className="bg-[url('/images/realpp.png')] rounded-3xl bg-center bg-no-repeat w-[100%] mt-3 my-3 h-screen max-h-[360px] flex flex-col justify-end items-center">
-      <h2 className="text-3xl text-white font-bold align-bottom mb-4">
-        Lives of Surgeons
-      </h2>
-    </div>
-    <div className="flex flex-col">
-      <div className="lastcont flex">
-        <div className="bg-[url('/images/p3.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
-          <h2 className="text-3xl text-white font-bold align-bottom mb-4">
-            Lives of Surgeons
-          </h2>
-        </div>
-        <div className="bg-[url('/images/p1.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
-          <h2 className="text-3xl text-white font-bold align-bottom mb-4">
-            Lives of Surgeons
-          </h2>
-        </div>
-      </div>
-      <div className="bg-[url('/images/pp3.png')] rounded-3xl bg-center bg-no-repeat w-[550px] h-[170px] ml-3 flex flex-col justify-end items-center">
+      <div className="bg-[url('/images/realpp.png')] rounded-3xl bg-center bg-no-repeat w-[100%] mt-3 my-3 h-screen max-h-[360px] flex flex-col justify-end items-center">
         <h2 className="text-3xl text-white font-bold align-bottom mb-4">
           Lives of Surgeons
         </h2>
       </div>
+      <div className="flex flex-col">
+        <div className="lastcont flex">
+          <div className="bg-[url('/images/p3.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
+            <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+              Nurse in kenya{" "}
+            </h2>
+          </div>
+          <div className="bg-[url('/images/p1.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
+            <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+              Covid-19
+            </h2>
+          </div>
+        </div>
+        <div className="bg-[url('/images/pp3.png')] rounded-3xl bg-center bg-no-repeat w-[550px] h-[170px] ml-3 flex flex-col justify-end items-center">
+          <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+            Lives of Surgeons
+          </h2>
+        </div>
+      </div>
     </div>
-  </div>
   );
 }
 export default PopularPostSlider;
