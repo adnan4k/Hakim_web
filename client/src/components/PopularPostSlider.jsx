@@ -30,25 +30,25 @@ function PopularPostSlider() {
     {
       title: "Surguery in addis abeba",
       description:
-        "We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+        "We love useful stuff, and wefullovefulluality wrfullingfullthat's whfullweffulllendfullut an editorial email newslet .........................",
       image: "/images/image1.png",
     },
     {
       title: "Surguery in addis abeba",
       description:
-        "We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+        "We love useful stuff, and wefullovefulluality wrfullingfullthat's whfullweffulllendfullut an editorial email newslet .........................",
       image: "/images/image1.png",
     },
     {
       title: "Surguery in addis abeba",
       description:
-        "We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+        "We love useful stuff, and wefullovefulluality wrfullingfullthat's whfullweffulllendfullut an editorial email newslet .........................",
       image: "/images/image3.png",
     },
     {
       title: "Surguery in addis abeba",
       description:
-        "We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
+        "We love useful stuff, and wefullovefulluality wrfullingfullthat's whfullweffulllendfullut an editorial email newslet .........................",
       image: "/images/image2.png",
     },
   ];
@@ -57,7 +57,7 @@ function PopularPostSlider() {
     fade: false,
     autoplay: true,
     infinite: true,
-    speed: 800,
+    speed: 700,
     autoplaySpeed: 6000,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -88,7 +88,7 @@ function PopularPostSlider() {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 470,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -98,11 +98,32 @@ function PopularPostSlider() {
   };
 
   return (
-    <Slider {...settings}>
-    <div className="grid grid-cols-3 grid-rows-2 gap-2 grid-flow-dense h-full w-[80%] mx-auto">
-      
+    <div className="bg-[url('/images/post-center.png')] bg-left-top bg-no-repeat flex justify-center items-center mx-auto max-w-[97%] mb-20">
+    <div className="bg-[url('/images/realpp.png')] rounded-3xl bg-center bg-no-repeat w-[100%] mt-3 my-3 h-screen max-h-[360px] flex flex-col justify-end items-center">
+      <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+        Lives of Surgeons
+      </h2>
+    </div>
+    <div className="flex flex-col">
+      <div className="lastcont flex">
+        <div className="bg-[url('/images/p3.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
+          <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+            Lives of Surgeons
+          </h2>
+        </div>
+        <div className="bg-[url('/images/p1.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
+          <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+            Lives of Surgeons
+          </h2>
+        </div>
+      </div>
+      <div className="bg-[url('/images/pp3.png')] rounded-3xl bg-center bg-no-repeat w-[550px] h-[170px] ml-3 flex flex-col justify-end items-center">
+        <h2 className="text-3xl text-white font-bold align-bottom mb-4">
+          Lives of Surgeons
+        </h2>
+      </div>
+    </div>
   </div>
-</Slider>
   );
 }
 export default PopularPostSlider;
