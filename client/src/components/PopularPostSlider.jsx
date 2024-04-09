@@ -100,10 +100,7 @@ function PopularPostSlider() {
   return (
     <Slider {...settings}>
     <div className="grid grid-cols-3 grid-rows-2 gap-2 grid-flow-dense h-full w-[80%] mx-auto">
-      <img src="/images/image.png" alt="" className="col-span-1 row-span-2" />
-      <img src="/images/image1.png" alt="" className="" />
-      <img src="/images/image1.png" alt="" className="" />
-      <img src="/images/image1.png" alt="" className="col-span-2 row-span-1" />
+      
   </div>
 </Slider>
   );
