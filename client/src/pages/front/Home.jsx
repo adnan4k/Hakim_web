@@ -2,22 +2,21 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import LatestPost from "../../components/LatestPost";
-import PopularPost from "../../components/PopularPost";
+// import PopularPost from "../../components/PopularPost";
 import Advertisment from "../../components/Advertisment";
 import Podcas from "../../components/Podcas";
-
 function Home() {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
       <section className="featured bg-center bg-bottom bg-no-repeat flex flex-col items-center ">
-        <style jsx>{`
+        {/* <style jsx>{`
           .featured {
             background-image: url("/images/ef.png"), url("/images/ef2.png");
             background-position: center buttom;
           }
-        `}</style>
+        `}</style> */}
         <div className="bg-[url('/images/ef2.png')] bg-no-repeat  bg-left-top mt-24">
           <div className="bg-[url('/images/ef2.png')] bg-no-repeat bg-right-bottom  ">
           <h2 className="text-center text-5xl font-extrabold">Feature post</h2>
@@ -33,14 +32,14 @@ function Home() {
       </section>
 
       <div>
-        <LatestPost />
+        {/* <LatestPost /> */}
       </div>
       <div>{/* <PopularPost /> */}</div>
       <div>
-        <Advertisment />
+        {/* <Advertisment /> */}
       </div>
       <div>
-        <Podcas />
+        {/* <Podcas /> */}
       </div>
     </div>
   );

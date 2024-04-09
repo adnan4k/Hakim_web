@@ -101,8 +101,8 @@ function AdsSlider() {
   return (
     <div className="slider max-w-[95%] z-20 -mt-32 py-10 mx-auto flex-row items-center justify-center">
     <Slider {...settings}>
-      {data.map((item) => (
-        <div className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto ">
+      {data.map((item,index) => (
+        <div key={index} className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto ">
           <div className="bg-white  flex flex-col justify-center items-center  rounded-3xl shadow-lg">
             <div className="f w-full">
               <img src={item.image} alt={item.title} className="w-full rounded-2xl" />
