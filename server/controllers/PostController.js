@@ -43,7 +43,7 @@ export const addPost = async(req,res,next) =>{
     
             if (updated) {
                 // const updatedPost = await Post.findByPk(id);
-                return res.status(200).json({ message: 'Post updated successfully', Post: updatedPost });
+                return res.status(200).json({ message: 'Post updated successfully', post: updated });
             } else {
                 return res.status(404).json({ message: 'Post not found' });
             }
