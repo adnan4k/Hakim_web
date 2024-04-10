@@ -17,10 +17,8 @@ function NavBar() {
 
   const getTitle = (pathname) => {
     const pathMap = {
-      '/admin/staff/display': 'Staff',
-      '/admin/news/display': ' News',
-      '/admin/service/display': 'Service',
-      '/admin/testimony/display': 'Testimony',
+      '/post': 'Posts',
+      '/ads': ' Advertisments',
     };
 
     const pathSegments = pathname.split('/').filter(Boolean);
@@ -40,13 +38,13 @@ function NavBar() {
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/images/logo.png" className="h-14" alt="groom-health" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Groom Health Care</span>
+        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hakim</span>
     </a>
     <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
           <div className="px-4 py-3">
-            <span className="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
-            <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+            <span className="block text-sm text-gray-900 dark:text-white">hakim</span>
+            <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">hakim@gmail.com</span>
           </div>
         
         </div>
