@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Table from './Table';
+import Table from './table';
 
 const fetchData = async () => {
   // Example API call
-  const response = await axios.get('http://localhost:4000/post/get-post');
+  const response = await axios.get('http://localhost:4000/ads/getadspost');
   console.log(response)
   return response.data;
 };
 
-function PostTable() {
+function AdsTable() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -25,8 +25,8 @@ function PostTable() {
       render: (row) => <img  src={`http://localhost:4000/images/${row.image}`} alt={row.title} style={{ width: '50px' }} /> 
     },
   ];
-  const type = "post"
+  const type = "ads"
   return <Table columns={columns} initialRows={data}   type={type} />;
 }
 
-export default PostTable;
+export default AdsTable;

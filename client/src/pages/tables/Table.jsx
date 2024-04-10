@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "../layout/Layout";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Layout from "../dashboard/Layout";
 
 function Table({ columns, initialRows, type }) {
   const handleDelete = async (id, type) => {
