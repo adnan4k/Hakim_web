@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Table from './table';
+import Table from './Table';
 
 const fetchData = async () => {
   // Example API call
-  const response = await axios.get('http://localhost:4000/ads/getadspost');
+  const response = await axios.get('http://localhost:4000/ads/get-ads');
   console.log(response)
   return response.data;
 };
