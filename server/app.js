@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 import cors from "cors"
 import multer from "multer"
 import sequilize from "./db.js"
+import postRouter from "./routes/PostRoute.js"
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -24,6 +25,9 @@ const storage = multer.diskStorage({
     dotenv.config();
     //   app.use(express.urlencoded({extended:true}));
     app.use('/images',express.static('images'))
+
+    //middleware
+    app.use('/post',upload.single("image"),postRouter);
   
 try {
     await sequilize.authenticate()
