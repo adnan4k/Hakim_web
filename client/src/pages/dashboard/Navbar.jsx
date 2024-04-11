@@ -8,13 +8,30 @@ function NavBar() {
     e.preventDefault();
   
     const pathParts = window.location.pathname.split('/');
-    pathParts.pop();
-    const newPath = pathParts.join('/');
+    const currentPath = pathParts[1]; // Get the first segment of the path
   
-    // Perform any necessary actions
+    let newPath;
+  
+    // Determine the new path based on the current path
+    switch (currentPath) {
+      case 'post':
+        newPath = '/create-post';
+        break;
+      case 'ads':
+        newPath = '/create-ads';
+        break;
+      case 'subscription':
+        newPath = '/subscription-create';
+        break;
+      default:
+        // If the current path is not recognized, navigate to a default path
+        newPath = '/';
+        break;
+    }
   
     navigate(newPath, { replace: true });
   };
+  
   const location = useLocation();
 
   const getTitle = (pathname) => {
@@ -35,6 +52,8 @@ function NavBar() {
 
     return 'Admin';
   };
+  console.log('Current pathname:', location.pathname);
+
   return (
     <div>
         <nav className="bg border-gray-200 dark:bg-gray-900">

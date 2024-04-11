@@ -7,6 +7,7 @@ import sequilize from "./db.js"
 import postRouter from "./routes/PostRoute.js"
 import adsRouter from "./routes/AdsRoute.js"
 import userRouter from "./routes/UserRoute.js"
+import path from "path"
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
