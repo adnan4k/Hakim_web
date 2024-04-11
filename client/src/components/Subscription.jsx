@@ -2,21 +2,27 @@ import axios from 'axios';
 import React, { useState } from "react";
 
 function Subscription() {
-  const [emailData, setEmail] = useState({
-    email: ""
-  });
+    const [emailData, setEmailData] = useState({ email: '' });
 
   const handleSubmit = async(e) =>{
+    e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/ads/create-ads', emailData);
+            console.log(emailData)
+            const response = await axios.post('http://localhost:4000/sub/create-sub', emailData);
+            setEmailData({email:""})
                console.log(response.data)
         } catch (error) {
             console.log(error)
         }
   }
   const handleChange = (e) => {
-    setEmail(e.target.value)
+    // Use the spread operator to merge the previous state with the updated value
+    setEmailData((prevEmail) => ({
+      ...prevEmail,
+      email: e.target.value, // Assuming you're also updating other fields besides email
+    }));
   };
+  
 
   return (
     <div>
