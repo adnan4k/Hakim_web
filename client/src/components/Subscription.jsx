@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from "react";
 
 function Subscription() {
@@ -5,6 +6,14 @@ function Subscription() {
     email: ""
   });
 
+  const handleSubmit = async(e) =>{
+        try {
+            const response = await axios.post('http://localhost:4000/ads/create-ads', emailData);
+               console.log(response.data)
+        } catch (error) {
+            console.log(error)
+        }
+  }
   const handleChange = (e) => {
     setEmail(e.target.value)
   };
@@ -17,7 +26,7 @@ function Subscription() {
             <p className="mx-auto mb-8 max-w-2xl text-black mt-10 font-semibold md:mb-12 sm:text-2xl font-Raleway dark:text-gray-400">
               Join us in the journey of creating health awareness in our community.
             </p>
-            <form action="#">
+            <form action="" onSubmit={handleSubmit}>
               <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                 <div className="relative w-full">
                   <label

@@ -8,6 +8,7 @@ import postRouter from "./routes/PostRoute.js"
 import adsRouter from "./routes/AdsRoute.js"
 import userRouter from "./routes/UserRoute.js"
 import path from "path"
+import subRouter from "./routes/SubRoute.js"
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -33,6 +34,7 @@ const storage = multer.diskStorage({
     app.use('/post',upload.single("image"),postRouter);
     app.use('/ads',upload.single("image"),adsRouter);
     app.use('/user',userRouter);
+    app.use('/sub',subRouter);
   
 try {
     await sequilize.authenticate()
