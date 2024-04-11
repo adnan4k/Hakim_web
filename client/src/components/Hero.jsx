@@ -9,7 +9,7 @@ function Hero() {
         </h2>
       </div>
       <div>
-        <div className="bg-[url('/images/ads.png')]  bg-left bg-cover">
+        <div className="bg-[url('/images/ads.png')] bg-left bg-cover">
           <div className="bg-[url('/images/hero-bg.jpg')] -mt-24 z-0 bg-cover h-screen bg-center">
             <img
               src="/images/hakim-hero.png"
