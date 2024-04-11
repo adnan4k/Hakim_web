@@ -4,12 +4,12 @@ function Navbar() {
   return (
     <div className="">
       <nav className="width-[90%]  border-gray-200 dark:bg-gray-900">
-        <div className="max-w-[90%] my-4 border border-[#00A3FF] bg-white rounded-3xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-[90%] my-4 shadow-2xl border border-[#00A3FF] bg-white rounded-3xl flex flex-wrap items-center justify-between mx-auto p-3">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="/images/logo.png" className="h-8" alt="hakim Logo" />
+            <img src="/images/logo.png" className="h-12" alt="hakim Logo" />
             {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Flowbite
             </span> */}
@@ -39,7 +39,7 @@ function Navbar() {
             </svg>
           </button>
           <div className="hidden w-full md:block text-[18px] md:w-auto" id="navbar-default">
-            <ul className="font-medium  flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium   flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
                   href="/"
@@ -68,15 +68,15 @@ function Navbar() {
               <li className=" px-8 rounded-full py-2 border border-[#00A3FF] mb-1">
                 <a
                   href="/"
-                  className="block text-[18px] py-2 text-[#00A3FF]] rounded-full font-bold  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[16px] py-2 text-[#00A3FF]] rounded-full font-bold  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Login
                 </a>
               </li>
-              <li className="px-6 rounded-full py-2 bg-[#00A3FF]">
+              <li className="px-3 rounded-full text-center bg-[#00A3FF]">
                 <a
                   href="/"
-                  className="block text-[18px] py-2 px-3 mr-3 text-white font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block text-[16px] my-3 py-2 px-3  text-white font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Subscribe
                 </a>
