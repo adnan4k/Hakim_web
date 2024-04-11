@@ -7,6 +7,7 @@ import Login from './pages/dashboard/Login';
 import PostTable from './pages/tables/PostTable';
 import AdsTable from './pages/tables/AdsTable';
 import SubscriptionTable from './pages/tables/SubscriptionTable';
+import Subscription from './components/Subscription';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/post" element={<PostTable />} />
           <Route path="/ads" element={<AdsTable />} />
           <Route path="/sub" element={<SubscriptionTable />} />
+          <Route path="/subscription" element={<Subscription />} />
         </Routes>
       </BrowserRouter>
     </div>

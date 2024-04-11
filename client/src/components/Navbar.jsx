@@ -79,14 +79,16 @@ function Navbar() {
                   </a>
                 </li>
               </Link>
-              <li className="px-3 rounded-full text-center bg-[#00A3FF]">
+              <Link to='/subscription'>
+              <li className="px-3 py-[0.2px] rounded-full text-center bg-[#00A3FF]">
                 <a
-                  href="/"
+                  href="/subscription"
                   className="block text-[16px] my-3 py-2 px-3  text-white font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Subscribe
                 </a>
               </li>
+              </Link>
             </ul>
           </div>
         </div>

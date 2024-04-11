@@ -1,15 +1,19 @@
 import axios from 'axios';
 import React, { useState } from "react";
-
+import Navbar from './Navbar';
+import Footer from './Footer';
+import {useNavigate,useLocation} from "react-router-dom"
 function Subscription() {
     const [emailData, setEmailData] = useState({ email: '' });
-
-  const handleSubmit = async(e) =>{
+    const navigate = useNavigate()
+    const location = useLocation()
+    const handleSubmit = async(e) =>{
     e.preventDefault();
         try {
             console.log(emailData)
             const response = await axios.post('http://localhost:4000/sub/create-sub', emailData);
             setEmailData({email:""})
+            navigate('/')
                console.log(response.data)
         } catch (error) {
             console.log(error)
@@ -26,6 +30,7 @@ function Subscription() {
 
   return (
     <div>
+       {location.pathname === '/' ? '' :<Navbar />} 
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md sm:text-center">
@@ -75,6 +80,7 @@ function Subscription() {
           </div>
         </div>
       </section>
+      {location.pathname === '/' ? '' :<Footer />} 
     </div>
   );
 }

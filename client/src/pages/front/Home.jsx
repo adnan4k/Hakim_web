@@ -43,7 +43,7 @@ function Home() {
       <div id="podcast">
         <Podcas />
       </div>
-      <div id="#sub">
+      <div id="#subs">
         <Subscription />
       </div>
       <div>
