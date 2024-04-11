@@ -62,16 +62,13 @@ function CreatePost() {
 
         if (!row) {
             // For creating a new service
-            const response = await axios.post('https://groom-health-care.onrender.com/news/create-news', formDataToSend, config);
-            console.log("Form submission response:", response.data);
+             await axios.post('http://localhost:4000/post/create-post', formDataToSend, config);
         } else {
-            
-            const response = await axios.post(`https://groom-health-care.onrender.com/news/edit-news/${row[index].id}`, formDataToSend, config);
-            console.log("Form submission response:", response.data);
+         await axios.put(`http://localhost:4000/post/update-post/${row[index].id}`, formDataToSend, config);
         }
 
         // Redirect after the operation
-        navigate('/admin/news/display');
+        navigate('/post');
     } catch (error) {
         console.error("Error submitting form:", error);
     }

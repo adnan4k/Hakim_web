@@ -6,11 +6,13 @@ function NavBar() {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     const pathParts = window.location.pathname.split('/');
     pathParts.pop();
     const newPath = pathParts.join('/');
-
+  
+    // Perform any necessary actions
+  
     navigate(newPath, { replace: true });
   };
   const location = useLocation();
@@ -19,6 +21,7 @@ function NavBar() {
     const pathMap = {
       '/post': 'Posts',
       '/ads': ' Advertisments',
+      '/subscription': ' Subscription',
     };
 
     const pathSegments = pathname.split('/').filter(Boolean);

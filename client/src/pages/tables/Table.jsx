@@ -9,9 +9,8 @@ function Table({ columns, initialRows, type }) {
   const handleDelete = async (id, type) => {
     try {
       const response = await axios.delete(
-        `https://groom-health-care.onrender.com/${type}/delete-${type}/${id}`
+        `http://localhost:4000/${type}/delete-${type}/${id}`
       );
-      console.log(response.data);
     } catch (error) {
       console.error("Error fetching service data:", error);
     }
@@ -62,7 +61,7 @@ function Table({ columns, initialRows, type }) {
                         </button>
                       </form>
                       <Link
-                        to={`/admin/${type}`}
+                        to={`/create-${type}`}
                         state={{ row: initialRows, index: rowIndex }}
                         className="text-red-500 hover:text-red-700 ml-2"
                       >
