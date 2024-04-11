@@ -6,6 +6,7 @@ import PopularPost from "../../components/PopularPost";
 import Advertisment from "../../components/Advertisment";
 import Podcas from "../../components/Podcas";
 import Subscription from "../../components/Subscription";
+import Footer from "../../components/Footer";
 function Home() {
   return (
     <div>
@@ -44,6 +45,9 @@ function Home() {
       </div>
       <div id="#sub">
         <Subscription />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
