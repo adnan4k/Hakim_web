@@ -38,7 +38,7 @@ function NavBar() {
     const pathMap = {
       '/post': 'Posts',
       '/ads': ' Advertisments',
-      '/subscription': ' Subscription',
+      '/sub': ' Subscription',
     };
 
     const pathSegments = pathname.split('/').filter(Boolean);
@@ -52,7 +52,6 @@ function NavBar() {
 
     return 'Admin';
   };
-  console.log('Current pathname:', location.pathname);
 
   return (
     <div>
@@ -83,7 +82,7 @@ function NavBar() {
 
         <h1 className="text-2xl">{getTitle(location.pathname)}</h1>
         <form  onSubmit={handleSubmit} className="text-center inline-block">
-         {location.pathname==='/appointment-details' ? '':( <button className="bg-blue-600 text-white :ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg ml-60 px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 outline-none ring-blue-800" >Add</button>)}
+         {location.pathname==='/sub' ? '':( <button className="bg-blue-600 text-white :ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg ml-60 px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 outline-none ring-blue-800" >Add</button>)}
           </form>     
       </ul>
     </div>

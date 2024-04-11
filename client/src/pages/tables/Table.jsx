@@ -8,6 +8,7 @@ import Layout from "../dashboard/Layout";
 function Table({ columns, initialRows, type }) {
   const handleDelete = async (id, type) => {
     try {
+      console.log(type, "type");
       const response = await axios.delete(
         `http://localhost:4000/${type}/delete-${type}/${id}`
       );
@@ -47,19 +48,19 @@ function Table({ columns, initialRows, type }) {
                   </td>
                 ))}
                 <td className="px-6 sm:px-16 py-4 text-right">
-                  {type === "appointment" ? (
+                  <form action="">
+                    <button
+                      type="submit"
+                      onClick={() => handleDelete(row.id, type)}
+                      className="text-blue-500 hover:text-blue-700"
+                    >
+                      <DeleteIcon />
+                    </button>
+                  </form>
+                  {type === "sub" ? (
                     ""
                   ) : (
                     <>
-                      <form action="">
-                        <button
-                          type="submit"
-                          onClick={() => handleDelete(row.id, type)}
-                          className="text-blue-500 hover:text-blue-700"
-                        >
-                          <DeleteIcon />
-                        </button>
-                      </form>
                       <Link
                         to={`/create-${type}`}
                         state={{ row: initialRows, index: rowIndex }}
