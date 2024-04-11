@@ -5,6 +5,7 @@ import LatestPost from "../../components/LatestPost";
 import PopularPost from "../../components/PopularPost";
 import Advertisment from "../../components/Advertisment";
 import Podcas from "../../components/Podcas";
+import Subscription from "../../components/Subscription";
 function Home() {
   return (
     <div>
@@ -31,15 +32,18 @@ function Home() {
         </div>
       </section>
 
-      <div>
+      <div id="post">
         <LatestPost />
       </div>
-      <div><PopularPost /></div>
-      <div>
+      <div ><PopularPost /></div>
+      <div id="ads">
         <Advertisment />
       </div>
-      <div>
+      <div id="podcast">
         <Podcas />
+      </div>
+      <div id="#sub">
+        <Subscription />
       </div>
     </div>
   );
