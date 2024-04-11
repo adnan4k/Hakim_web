@@ -8,6 +8,8 @@ import PostTable from './pages/tables/PostTable';
 import AdsTable from './pages/tables/AdsTable';
 import SubscriptionTable from './pages/tables/SubscriptionTable';
 import Subscription from './components/Subscription';
+import UserTable from './pages/tables/UserTable';
+import CreateUser from './pages/dashboard/CreateUser';
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
           <Route path="/ads" element={<AdsTable />} />
           <Route path="/sub" element={<SubscriptionTable />} />
           <Route path="/subscription" element={<Subscription />} />
+          <Route path="/user" element={<UserTable />} />
+          <Route path="/create-user" element={<CreateUser/>} />
         </Routes>
       </BrowserRouter>
     </div>

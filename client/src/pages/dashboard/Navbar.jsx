@@ -23,6 +23,9 @@ function NavBar() {
       case 'subscription':
         newPath = '/subscription-create';
         break;
+      case 'user':
+        newPath = '/create-user';
+        break;
       default:
         // If the current path is not recognized, navigate to a default path
         newPath = '/';
