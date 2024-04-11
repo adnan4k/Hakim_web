@@ -25,14 +25,14 @@ function Login() {
     // console.log(formData,'in the submission')
     try {
       const response = await axios.post(
-        "https://groom-health-care.onrender.com/user/login",
+        "http://localhost:4000/user/login",
         formData
       );
       console.log("form submission response", response);
-      if (response.data.user.role === "admin") {
-        navigate("/admin/news/display");
-      } else if (response.data.user.role === "") {
-        navigate("/appointment");
+      if (response.data.user.isAdmin === true) {
+        navigate("/post");
+      } else if (response.data.user.isAdmin === false) {
+        navigate("/");
       }
       if (response.data.message === "notfound" || response.status === 400) {
         setError("user not found");
