@@ -75,7 +75,7 @@ function Navbar() {
                 </a>
               </li>
               <Link to="/login">
-                <li className="px-4 sm:px-8 rounded-full py-2 border border-[#00A3FF] mb-1">
+                <li className="px-3 w-[40%] sm:w-full ml-7 sm:ml-0 sm:px-8 rounded-full py-2 border border-[#00A3FF] mb-1">
                   <a
                     href="/login"
                     className="block text-[16px] text-center py-2 text-[#00A3FF]] rounded-full font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -85,10 +85,10 @@ function Navbar() {
                 </li>
               </Link>
               <Link to="/subscription">
-                <li className="sm:px-3 py-[0.2px] rounded-full text-center bg-[#00A3FF]">
+                <li className="px-3 ml-7 mt-1 sm:mt-0 sm:ml-0 w-[40%] sm:w-full py-[0.1px] rounded-full text-center bg-[#00A3FF]">
                   <a
                     href="/subscription"
-                    className="block text-[16px]text-center my-3 py-2 px-3  text-white fontbold hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block text-[16px]text-center  my-3  px-3  text-white fontbold hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Subscribe
                   </a>
