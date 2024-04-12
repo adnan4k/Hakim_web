@@ -10,22 +10,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIos from "@mui/icons-material/ArrowBackIos";
 
 function PopularPostSlider() {
-  // const [data,setData] = useState([]);
-  // useEffect(() => {
-  //   // Function to fetch data from the API
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get('https://groom-health-care.onrender.com/testimony/get-testimony');
-  //       console.log(response.data[0].image);
-  //       setData(response.data); // Assuming the response data is the array of testimonies
-  //     } catch (error) {
-  //       console.error("Error fetching testimonies:", error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, [])
-
   const data = [
     {
       title: "Surguery in addis abeba",
@@ -52,6 +36,7 @@ function PopularPostSlider() {
       image: "/images/image2.png",
     },
   ];
+
   const settings = {
     dots: true,
     fade: false,
@@ -80,15 +65,15 @@ function PopularPostSlider() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 470,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -98,14 +83,14 @@ function PopularPostSlider() {
   };
 
   return (
-    <div className="bg-[url('/images/post-center.png')] bg-left-top bg-no-repeat flex justify-center items-center mx-auto max-w-[97%] mb-20">
-      <div className="bg-[url('/images/realpp.png')] rounded-3xl bg-center bg-no-repeat w-[100%] mt-3 my-3 h-screen max-h-[360px] flex flex-col justify-end items-center">
+    <div className="bg-[url('/images/post-center.png')] bg-left-top bg-no-repeat flex flex-col md:flex-row justify-center items-center mx-auto max-w-[97%] mb-20">
+      <div className="bg-[url('/images/realpp.png')] rounded-3xl bg-center bg-no-repeat w-full md:w-[50%] mt-3 my-3 h-screen max-h-[340px] flex flex-col justify-end items-center">
         <h2 className="text-3xl text-white font-bold align-bottom mb-4">
           Lives of Surgeons
         </h2>
       </div>
-      <div className="flex flex-col">
-        <div className="lastcont flex">
+      <div className="flex flex-col md:ml-6 w-full md:w-[50%]">
+        <div className="lastcont flex flex-wrap justify-center">
           <div className="bg-[url('/images/p3.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
             <h2 className="text-3xl text-white font-bold align-bottom mb-4">
               Nurse in kenya{" "}
@@ -117,7 +102,7 @@ function PopularPostSlider() {
             </h2>
           </div>
         </div>
-        <div className="bg-[url('/images/pp3.png')] rounded-3xl bg-center bg-no-repeat w-[550px] h-[170px] ml-3 flex flex-col justify-end items-center">
+        <div className="bg-[url('/images/pp3.png')] rounded-3xl bg-center bg-no-repeat w-full md:w-[550px] h-[170px] ml-3 flex flex-col justify-end items-center">
           <h2 className="text-3xl text-white font-bold align-bottom mb-4">
             Lives of Surgeons
           </h2>
