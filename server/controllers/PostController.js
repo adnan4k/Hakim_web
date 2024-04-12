@@ -62,7 +62,21 @@ export const addPost = async(req,res,next) =>{
             return res.status(500).json({ message: "Server error" });
         }
     }
-
+ 
+    export const latestPost = async(req,res) =>{
+        try {
+            const latestPosts = await Post.findAll({
+                order: [['createdAt', 'DESC']],
+                limit: 4
+              });
+              if(latestPosts){
+                return res.status(200).json(latestPosts)
+              }
+              return res.status(400).json({message:"something went wrong"})
+        } catch (error) {
+            return res.status(500).json({message:error})
+        }
+    }
     export const deletePost = async (req, res) => {
         const { id } = req.params;
         try {
