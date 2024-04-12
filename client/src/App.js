@@ -10,6 +10,7 @@ import SubscriptionTable from './pages/tables/SubscriptionTable';
 import Subscription from './components/Subscription';
 import UserTable from './pages/tables/UserTable';
 import CreateUser from './pages/dashboard/CreateUser';
+import PostDetail from './pages/front/PostDetail';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/subscription" element={<Subscription />} />
           <Route path="/user" element={<UserTable />} />
           <Route path="/create-user" element={<CreateUser/>} />
+          <Route path="/post-detail" element={<PostDetail/>} />
         </Routes>
       </BrowserRouter>
     </div>

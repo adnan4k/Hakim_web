@@ -9,6 +9,7 @@ import PreviousBtn from "./PreviousBtn";
 import NextBtn from "./NextBtn";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIos from "@mui/icons-material/ArrowBackIos";
+import { Link } from "react-router-dom";
 
 function Testimony() {
   const [data,setData] = useState([]);
@@ -27,32 +28,7 @@ function Testimony() {
     fetchData();
   }, [])
 
-  const datas = [
-    {
-      title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
-      image:"/images/image1.png"
-
-    },
-    {
-      title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
-      image:"/images/image1.png"
-
-    },
-    {
-      title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
-      image:"/images/image3.png"
-
-    },
-    {
-      title:"Surguery in addis abeba",
-      description:"We love useful stuff, and we love quality writing, that's why we send out an editorial email newslet .........................",
-      image:"/images/image2.png"
-
-    },
-  ]
+ 
   const settings = {
     dots: true,
     fade: false,
@@ -97,7 +73,9 @@ function Testimony() {
       }
     ]
   };
-  
+  const truncateText = (text, maxLength = 100) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + '.........' : text;
+  };
   return (
 <div className="testimonial bg-[url('/images/ef2.png')] bg-no-repeat bg-left-top">
       <div className="max-w-[75%] sm:max-w-[90%]  mx-auto items-center justify-center py-10  sm:mx-14  bg-[url('/images/post-center.png')] bg-no-repeat bg-center">
@@ -108,8 +86,10 @@ function Testimony() {
             <img src={`http://localhost:4000/images/${item.image}`} alt={item.title} className="mx-auto w-full rounded-2xl " />
             <h2 className="text-center text-xl font-semibold ">{item.title}</h2>
             </div>
-            <p className="text-center my-5">{item.content}</p>
+            <p className="text-center my-5">{truncateText(item.content)}</p>
+            <Link to='/post-detail' state={{content:item.content,image:item.image,title:item.title}}>
              <button className="px-10 py-2 bg-[#41BAFF] text-white text-[16px]  text-nowrap rounded-3xl">Read More</button>
+             </Link>
             </div>
           </div>
       ))}</Slider>
