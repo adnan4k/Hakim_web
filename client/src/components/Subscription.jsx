@@ -58,7 +58,7 @@ function Subscription() {
                     </svg>
                   </div>
                   <input
-                    className="block p-3 pl-10 w-full text-sm text-black bg-gray-50 rounded-lg border border-[#00A3FF] sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    className="block p-3 pl-10 w-full text-sm text-black bg-gray-50 rounded-lg border border-[#00A3FF] sm:rounded-full focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Enter your email"
                     type="email"
                     id="email"
@@ -67,10 +67,10 @@ function Subscription() {
                     required=""
                   />
                 </div>
-                <div>
+                <div className='rounded-full'>
                   <button
                     type="submit"
-                    className="py-3 px-5 w-full rounded-full text-sm font-medium text-center text-white border cursor-pointer bg-[#00A3FF] border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    className="py-3 px-5 w-full ml-2 rounded-full text-sm font-medium text-center text-white border cursor-pointer bg-[#00A3FF] border-primary-600 sm:rounded-full  hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
                     Subscribe
                   </button>
