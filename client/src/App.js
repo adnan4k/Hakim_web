@@ -11,6 +11,7 @@ import Subscription from './components/Subscription';
 import UserTable from './pages/tables/UserTable';
 import CreateUser from './pages/dashboard/CreateUser';
 import PostDetail from './pages/front/PostDetail';
+import ViewAll from './pages/front/ViewAll';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/user" element={<UserTable />} />
           <Route path="/create-user" element={<CreateUser/>} />
           <Route path="/post-detail" element={<PostDetail/>} />
+          <Route path="/view-all" element={<ViewAll/>} />
         </Routes>
       </BrowserRouter>
     </div>
