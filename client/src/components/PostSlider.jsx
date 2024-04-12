@@ -100,10 +100,10 @@ function Testimony() {
   
   return (
 <div className="testimonial bg-[url('/images/ef2.png')] bg-no-repeat bg-left-top">
-      <div className="w-[90%] ml-[5%] items-center justify-center py-10 mx-2 sm:mx-14  bg-[url('/images/post-center.png')] bg-no-repeat bg-center">
+      <div className="max-w-[75%] sm:max-w-[90%]  mx-auto items-center justify-center py-10  sm:mx-14  bg-[url('/images/post-center.png')] bg-no-repeat bg-center">
         <Slider {...settings}>{data.map((item) => (
           <div key={item.id} className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3  ">
-            <div key={item.id} className=" bg-white flex flex-col justify-center items-center p-5 border border-[#AAAAAAAA] rounded-lg shadow-lg">
+            <div key={item.id} className="max bg-white flex flex-col justify-center items-center p-5 border border-[#AAAAAAAA] rounded-lg shadow-lg">
             <div key={item.id} className="flex flex-col">
             <img src={item.image} alt={item.title} className="mx-auto w-full rounded-2xl " />
             <h2 className="text-center text-xl font-semibold ">{item.title}</h2>

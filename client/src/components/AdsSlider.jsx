@@ -99,7 +99,7 @@ function AdsSlider() {
   };
   
   return (
-    <div className="slider max-w-[95%] z-20 -mt-32 py-10 mx-auto flex-row items-center justify-center">
+    <div className="slider max-w-[75%] sm:max-w-[95%] z-20 -mt-32 py-10 mx-auto flex-row items-center justify-center">
     <Slider {...settings}>
       {data.map((item,index) => (
         <div key={index} className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto ">
