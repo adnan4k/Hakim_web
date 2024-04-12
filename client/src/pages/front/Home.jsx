@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import LatestPost from "../../components/LatestPost";
@@ -8,10 +10,12 @@ import Podcas from "../../components/Podcas";
 import Subscription from "../../components/Subscription";
 import Footer from "../../components/Footer";
 function Home() {
-  return (
+  useEffect(() => {
+    AOS.init();
+  }, []);  return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero data-aos="fade-down" />
       <section className="featured bg-center bg-bottom bg-no-repeat flex flex-col items-center ">
         <style jsx>{`
           .featured {
@@ -19,7 +23,7 @@ function Home() {
             background-position: center buttom;
           }
         `}</style>
-        <div className="bg-[url('/images/ef2.png')] bg-no-repeat  bg-left-top mt-24">
+        <div className="bg-[url('/images/ef2.png')] bg-no-repeat  bg-left-top mt-24" data-aos="fade-down">
           <div className="bg-[url('/images/ef2.png')] bg-no-repeat bg-right-bottom  ">
           <h2 className="text-center text-5xl font-extrabold">Feature post</h2>
           <p className="text-2xl text-center my-5">
