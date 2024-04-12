@@ -90,7 +90,7 @@ function PopularPostSlider() {
         </h2>
       </div>
       <div className="flex flex-col md:ml-6 w-full md:w-[50%]">
-        <div className="lastcont flex flex-wrap justify-center">
+        <div className="lastcont flex flex-row sm:flex-wrap justify-center">
           <div className="bg-[url('/images/p3.png')] rounded-3xl bg-center bg-no-repeat w-[260px] h-[180px] m-3 flex flex-col justify-end items-center">
             <h2 className="text-3xl text-white font-bold align-bottom mb-4">
               Nurse in kenya{" "}

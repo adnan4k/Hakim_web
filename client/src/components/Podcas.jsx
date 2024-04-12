@@ -3,8 +3,8 @@ import React from 'react'
 function Podcas() {
   return (
     <div className='flex mt-[10%]'>
-      <div className='flex bg-[#C7EBFF] justify-center items-center w-full sm:h-[400px]' >
-      <div className='bg-[#C7EBFF]  w-full sm:h-[30%]  flex flex-col items-center  z-0 '>
+      <div className='flex bg-[#C7EBFF] my-auto justify-center items-center w-full sm:h-[400px]' >
+      <div className='bg-[#C7EBFF] my-auto  w-full sm:h-[30%]  flex flex-col items-center  z-0 '>
             <h2 className='text-[#5A5A5A] my-3 text-xl sm:text-2xl font-semibold '>There will be future</h2>
             <h2 className='capitalize my-3 text-[#5686E1] text-3xl sm:text-5xl font-bold'>PODCASTS</h2>
             <p className='text-[#5A5A5A] my-3 text-xl font-semibold'>Available here</p>
