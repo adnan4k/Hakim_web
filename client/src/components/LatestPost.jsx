@@ -1,5 +1,6 @@
 import React from "react";
 import MultipleItems from "./PostSlider";
+import { Link } from "react-router-dom";
 function LatestPost() {
   return (
     <div>
@@ -9,9 +10,9 @@ function LatestPost() {
         </div>
         <div className="flex-grow"></div>
         <div>
-          <a href="/">
+          <Link to='/view-all' >
             <h2 className="text-[#17ABFF] font-bold text-2xl mr-10">View All</h2>
-          </a>
+          </Link>
         </div>
       </div>
 

@@ -62,7 +62,20 @@ export const addAds = async(req,res,next) =>{
             return res.status(500).json({ message: "Server error" });
         }
     }
-
+    export const latestAds = async(req,res) =>{
+        try {
+            const latestAds = await Ads.findAll({
+                order: [['createdAt', 'DESC']],
+                limit: 3
+              });
+              if(latestAds){
+                return res.status(200).json(latestAds)
+              }
+              return res.status(400).json({message:"something went wrong"})
+        } catch (error) {
+            return res.status(500).json({message:error})
+        }
+    }
     export const deleteAds = async (req, res) => {
         const { id } = req.params;
         try {
