@@ -10,7 +10,7 @@ function PostDetail() {
     <div>
         <Navbar />
         <div className='flex flex-col justify-center items-center my-10'>
-            <img src={`http://localhost:4000/images/${image}`} className='w object-scale-down' alt={title} />
+            <img src={`http://backend.hakimethio.et:4000/images/${image}`} className='w object-scale-down' alt={title} />
            <h1 className='text-center my-4 text-xl font-semibold'>{title}</h1>
            <p>{content} </p>
 

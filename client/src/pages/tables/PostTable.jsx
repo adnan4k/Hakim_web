@@ -4,7 +4,7 @@ import Table from './Table';
 
 const fetchData = async () => {
   // Example API call
-  const response = await axios.get('http://localhost:4000/post/get-post');
+  const response = await axios.get('http://backend.hakimethio.et:4000/post/get-post');
   console.log(response)
   return response.data;
 };
@@ -22,7 +22,7 @@ function PostTable() {
     { 
       key: 'image', 
       label: 'Image', 
-      render: (row) => <img  src={`http://localhost:4000/images/${row.image}`} alt={row.title} style={{ width: '50px' }} /> 
+      render: (row) => <img  src={`http://backend.hakimethio.et:4000/images/${row.image}`} alt={row.title} style={{ width: '50px' }} /> 
     },
   ];
   const type = "post"

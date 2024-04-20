@@ -10,7 +10,7 @@ function ViewAll() {
     // Function to fetch data from the API
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/post/get-post');
+        const response = await axios.get('http://backend.hakimethio.et:4000/post/get-post');
         console.log(response.data[0].image);
         setData(response.data); // Assuming the response data is the array of testimonies
       } catch (error) {
@@ -26,7 +26,7 @@ function ViewAll() {
         <div className='grid grid-cols-3 gap-5 mx-10  my-14'>
              {data.map((item) =>(<div key={item.id} className="max bg-white flex flex-col justify-center items-center p-5 border border-[#AAAAAAAA] rounded-lg shadow-lg">
             <div key={item.id} className="flex flex-col">
-            <img src={`http://localhost:4000/images/${item.image}`} alt={item.title} className="mx-auto w-full rounded-2xl " />
+            <img src={`http://backend.hakimethio.et:4000/images/${item.image}`} alt={item.title} className="mx-auto w-full rounded-2xl " />
             <h2 className="text-center text-xl font-semibold ">{item.title}</h2>
             </div>
             <p className="text-center my-5">{item.content}</p>

@@ -17,7 +17,7 @@ function AdsSlider() {
     // Function to fetch data from the API
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/ads/latest-ads');
+        const response = await axios.get('http://backend.hakimethio.et:4000/ads/latest-ads');
         console.log(response.data[0].image);
         setData(response.data); // Assuming the response data is the array of testimonies
       } catch (error) {
@@ -84,7 +84,7 @@ function AdsSlider() {
         <div key={index} className="p-4 w grid grid-cols-1 sm:grid sm:grid-cols-3 mx-auto ">
           <div className="bg-white  flex flex-col justify-center items-center  rounded-3xl shadow-lg">
             <div className="f w-full">
-              <img src={`http://localhost:4000/images/${item.image}`} alt={item.title} className="w-full rounded-2xl" />
+              <img src={`http://backend.hakimethio.et:4000/images/${item.image}`} alt={item.title} className="w-full rounded-2xl" />
               <h2 className="px-10 pt-3 text-xl font-semibold">{item.title}</h2>
             </div>
             <p className="px-5 my-5">{truncateText(item.content)}</p>

@@ -62,9 +62,9 @@ function CreatePost() {
 
         if (!row) {
             // For creating a new service
-             await axios.post('http://localhost:4000/post/create-post', formDataToSend, config);
+             await axios.post('http://backend.hakimethio.et:4000/post/create-post', formDataToSend, config);
         } else {
-         await axios.put(`http://localhost:4000/post/update-post/${row[index].id}`, formDataToSend, config);
+         await axios.put(`http://backend.hakimethio.et:4000/post/update-post/${row[index].id}`, formDataToSend, config);
         }
 
         // Redirect after the operation

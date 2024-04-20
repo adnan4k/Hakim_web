@@ -10,7 +10,7 @@ function Table({ columns, initialRows, type }) {
     try {
       console.log(type, "type");
       const response = await axios.delete(
-        `http://localhost:4000/${type}/delete-${type}/${id}`
+        `http://backend.hakimethio.et:4000/${type}/delete-${type}/${id}`
       );
     } catch (error) {
       console.error("Error fetching service data:", error);

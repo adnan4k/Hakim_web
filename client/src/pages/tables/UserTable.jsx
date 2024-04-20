@@ -4,7 +4,7 @@ import Table from './Table';
 
 const fetchData = async () => {
   // Example API call
-  const response = await axios.get('http://localhost:4000/user/get-user');
+  const response = await axios.get('http://backend.hakimethio.et:4000/user/get-user');
   console.log(response)
   return response.data;
 };

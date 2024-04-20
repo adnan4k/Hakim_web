@@ -62,11 +62,11 @@ function CreateAds() {
 
         if (!row) {
             // For creating a new service
-            const response = await axios.post('http://localhost:4000/ads/create-ads', formDataToSend, config);
+            const response = await axios.post('http://backend.hakimethio.et:4000/ads/create-ads', formDataToSend, config);
             console.log("Form submission response:", response.data);
         } else {
             
-            const response = await axios.put(`http://localhost:4000/ads/update-ads/${row[index].id}`, formDataToSend, config);
+            const response = await axios.put(`http://backend.hakimethio.et:4000/ads/update-ads/${row[index].id}`, formDataToSend, config);
             console.log("Form submission response:", response.data);
         }
 

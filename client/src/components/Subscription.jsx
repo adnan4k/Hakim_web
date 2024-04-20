@@ -11,7 +11,7 @@ function Subscription() {
     e.preventDefault();
         try {
             console.log(emailData)
-            const response = await axios.post('http://localhost:4000/sub/create-sub', emailData);
+            const response = await axios.post('http://backend.hakimethio.et:4000/sub/create-sub', emailData);
             setEmailData({email:""})
             navigate('/')
                console.log(response.data)
