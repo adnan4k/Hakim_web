@@ -9,7 +9,7 @@ import adsRouter from "./routes/AdsRoute.js"
 import userRouter from "./routes/UserRoute.js"
 import path from "path"
 import subRouter from "./routes/SubRoute.js"
-import axios from "axios"
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
