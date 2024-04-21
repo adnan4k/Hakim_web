@@ -37,26 +37,6 @@ const storage = multer.diskStorage({
     app.use('/user',userRouter);
     app.use('/sub',subRouter);
 
-// const sendMessageToTelegram = async (chatId, message) => {
-//   try {
-//     const apiUrl = `https://api.telegram.org/bot6720415269:AAGj1lkNGsTlOU7BlqN8yUTs3khVDXOnIE8/sendMessage`;
-//     const response = await axios.post(apiUrl, {
-//       chat_id: chatId,
-//       text: message,
-//     });
-
-//     console.log(response.data);
-//     return response.data;
-//   } catch (error) {
-//     console.error('Error sending message to Telegram:', error);
-//     throw error;
-//   }
-// };
-
-// Usage
-// const chatId = '5280455350';
-// const message = 'Hello from rama this is message from rama!';
-// sendMessageToTelegram(chatId, message);
 
   
 try {
