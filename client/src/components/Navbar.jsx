@@ -7,11 +7,11 @@ function Navbar() {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  // [#EEE5FF]
+
   return (
     <div>
       <nav className="border-gray-200 dark:bg-gray-900">
-        <div className="max-w-[90%] my-4 shadow-2xl border border-[#00A3FF] bg-black rounded-3xl flex flex-wrap items-center justify-between mx-auto p-3">
+        <div className="max-w-[90%] my-4 shadow-2xl border border-[#00A3FF] bg-[#EEE5FF] rounded-3xl flex flex-wrap items-center justify-between mx-auto p-3">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
