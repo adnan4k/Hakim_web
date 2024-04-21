@@ -32,7 +32,18 @@ const storage = multer.diskStorage({
       next();
     });
     dotenv.config();
-
+       //proxy
+       const proxyOptions = {
+        target: 'http://backend.hakimethio.et:4000', // Your backend server URL
+        changeOrigin: true,
+        secure: false // Disable SSL verification
+      };
+      
+      // Proxy middleware
+      const proxy = createProxyMiddleware(proxyOptions);
+      
+      // Apply the proxy middleware
+      app.use(proxy);
     //   app.use(express.urlencoded({extended:true}));
     app.use('/images',express.static('images'))
 
